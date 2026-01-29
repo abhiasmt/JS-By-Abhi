@@ -17,6 +17,10 @@ console.log(`Original Array : ${Arr}`);
 //Splicing
 
 /*
+
+*splice => Changes the original array
+*slice => Safe Copy
+
 It use to manipulate an Array :->
     i. Delete a subarray from the original array (start to end(excluded) )
     ii. Add Elements using the parameters like => Arr.splice(StartIndx, 0 , Addable SubArray)
@@ -49,6 +53,12 @@ console.log(`New Array after Replacing Elements using Slice() : ${Arr3}`);
 const Arr4=[90,87,65,54,43,32,21,];
 Arr4.splice(-2,1);//remove the 2nd last element from the array
 console.log(`New Array after using Negative Index using Slice() : ${Arr4}`);
+
+
+console.log(`Array from string : ${Array.from("Hello World")}`);//Convert a string to Array 
+
+
+
 
 
 
