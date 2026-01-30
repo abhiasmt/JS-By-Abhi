@@ -3,6 +3,22 @@ const Arr = [1,2,3,4,5,6,7,8,9,0];
 console.log(`Array : ${Arr}`);//Print the whole Array
 console.log(`Number at index 0 : ${Arr[0]}`);//Print element from a specific position
 
+//Merge two Arrays :->
+    //*If we use push() function:-
+
+const marvelHero=["Thor","IronMan","SpiderMan"];
+const dcHero=["SuperHero","BatMan"];
+
+// marvelHero.push(dcHero);
+// console.log(marvelHero);//Output => [ 'Thor', 'IronMan', 'SpiderMan', [ 'SuperHero', 'BatMan' ] ]
+
+//Merge two Arrays :->
+    //*If we use concat() function (better than push()):-
+
+const allHero=marvelHero.concat(dcHero);
+console.log(allHero);//Output => [ 'Thor', 'IronMan', 'SpiderMan', 'SuperHero', 'BatMan' ]
+
+
 //Slicing :->
 
 // console.log(`Array from 0th index to 5th index : ${Arr.slice(0,5)}`);
@@ -57,6 +73,20 @@ console.log(`New Array after using Negative Index using Slice() : ${Arr4}`);
 
 console.log(`Array from string : ${Array.from("Hello World")}`);//Convert a string to Array 
 
+
+console.log(Array.isArray("ASSAM"));//Output => false
+console.log(Array.from("ASSAM"));//Convert to Array => [ 'A', 'S', 'S', 'A', 'M' ]
+
+let obj=console.log(Array.from({name: "ASSAM"}));//Cant convert to Array because its an object type
+console.log(obj);//Output => Undefined
+
+//--------------------------------------//
+let num1=90;
+let num2=80;
+let num3=70;
+let num4=60;
+
+console.log(Array.of(num1,num2,num3));//Convert all the num1,num2,num3 (Numbers) to Array 
 
 
 

@@ -1,5 +1,5 @@
 // The prompt() fun is only workable in the browser but not in the Node JS 
-//  -> Because it runs outside the browser 
+//  -> Because it (Node JS) runs outside the browser 
 //  -> In Node JS we use readline 
 
 // For browser only :->
@@ -45,6 +45,7 @@ let  Arr = new Array();
 for(i=0;i<size;i++){
     Arr[i]=prompt.questionInt(`Enter the element no. ${i+1} :`);
 }
+Arr=Arr.sort();//Binary search need sorted array so...
 
 let search=prompt.questionInt("Enter the searchable element : ");
 let mid=0;
