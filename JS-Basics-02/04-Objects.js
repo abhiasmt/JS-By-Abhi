@@ -53,3 +53,24 @@ Clg.branch={ //Entering an Object into another obj
 console.log(Clg);
 
 
+//---------------------------------------------------------------------------//
+//Object with function:- >
+
+const user={
+    userName : "Abhi",
+    uId: "avi@2005",
+
+    welcomeMsg: function welcome(){
+        console.log(`${this.userName} , welcome to the website !`);//"this" keyword is used to specify "Current Context"
+        //We can't access any var outside the func without using "this" keyword
+    }
+
+};
+
+user.welcomeMsg();//Output => Abhi , welcome to the website !
+user.userName="Swastika";
+user.welcomeMsg();//Output => Swastika , welcome to the website ! 
+
+
+
+

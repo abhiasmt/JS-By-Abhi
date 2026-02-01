@@ -35,3 +35,4 @@ console.log(`Div : ${Div(8,2)}`);
 
 const user =()=> ({name:"Parveen",age:20});
 console.log(user());
+
