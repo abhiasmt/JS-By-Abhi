@@ -1,4 +1,5 @@
 //For-of loop is used to access the value of array, string and map
+//Why we use it => It does not require any initialization or increment
 //We can't use for-of loop to traverse an object
 
 
