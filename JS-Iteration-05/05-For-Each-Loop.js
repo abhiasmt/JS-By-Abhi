@@ -54,15 +54,24 @@ function increment(){ //Empty function
 }
 
 console.log("Passing a function as parameter ");
-arr.forEach((increment)=>{
+arr.forEach((increment)=>{ //Only passing the reference of the function (or function name) not the initialization ( or the () )
     console.log(increment);
 })
+
+
+console.log("Passing a function as parameter 2nd Method : ");
+function num(item){
+    console.log(item);
+}
+
+arr.forEach(num); //Only passing the reference of the function (or function name) not the initialization ( or the () )
 
 
 //----------------------------------------------------------------//
 
 console.log("Printing Index and Value using For-Each Method : ");
-
 arr.forEach(function (value, index){
     console.log(`${index} => ${value}`);
 })
+
+
