@@ -1,3 +1,17 @@
+//Filter Method in JavaScript
+/*
+filter() Method:-
+-The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+-Or we can say that filter() method filters the elements based on some condition and returns a new array with the elements that satisfy that condition. 
+Syntax:-
+array.filter(function(currentValue, index, array) {
+    // code to execute
+});
+Parameters:-
+    -currentValue → current element
+    -index (optional) → index of current  element
+    -array (optional) → the whole array
+*/
 //filter() method is same as forEach() method but it can return any value that the forEach() can't.
 //For this advantage we use filter() method 
 
