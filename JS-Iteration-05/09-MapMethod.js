@@ -100,3 +100,11 @@ console.log(BookDetail);
 
 // console.log(nameAndAuthor);
 
+
+//Eg. of increasing price by 10% using map() method:-
+
+const increasedPrice=Books.map((book)=>{
+    return (book.price + (book.price*0.10));
+});
+
+console.log(`Increased Price : ${increasedPrice}`);

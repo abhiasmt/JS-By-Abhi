@@ -20,17 +20,3 @@ console.log(str.slice(0,15));//Slicing a String
 console.log(str.substring(0,20));//Print a subString from a string
 console.log(str.length);//Length of the string
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

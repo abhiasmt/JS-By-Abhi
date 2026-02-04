@@ -55,4 +55,4 @@ const Books = [
 const TotalPrice = Books.reduce((acc,book)=>{
     return acc + book.price;
 },0);
-console.log(TotalPrice);
+console.log(TotalPrice.toLocaleString());
