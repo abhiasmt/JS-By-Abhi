@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Color Buttons</title>
+
+<style>
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:20px;
+    background:#f4f4f4;
+  }
+
+  .button{
+    width:120px;
+    height:120px;
+    border-radius:15px;
+    border:2px solid black;
+    cursor:pointer;
+  }
+
+  #red{ background:red; }
+  #white{ background:white; }
+  #gray{ background:gray; }
+  #blue{ background:blue; }
+</style>
+</head>
+
+<body id="body">
+
+<div class="button" id="red"></div>
+<div class="button" id="white"></div>
+<div class="button" id="gray"></div>
+<div class="button" id="blue"></div>
+<button class="ResetBtn" id="resetBtn">Reset</button>
+
+<script src="src.js"></script>
+</body>
+</html>
